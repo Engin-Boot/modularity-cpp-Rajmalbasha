@@ -1,7 +1,7 @@
 #include <iostream>
 #include <assert.h>
 #include "colorcode.h"
-
+using namesoace std;
 void testNumberToPair(int pairNumber,
     TelCoColorCoder::MajorColor expectedMajor,
     TelCoColorCoder::MinorColor expectedMinor)
