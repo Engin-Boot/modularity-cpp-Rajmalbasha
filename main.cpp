@@ -23,6 +23,16 @@ void testPairToNumber(
     assert(pairNumber == expectedPairNumber);
 }
 
+void ToString() {
+    cout<<"Color Mapping Manual"<<endl;
+    cout<<"Pair Number"<<"\t"<<"Major Minor"<<endl;
+    for(int pairNumber = 1; pairNumber <= 25; pairNumber++) {
+        TelCoColorCoder::ColorPair colorPair =
+        TelCoColorCoder::GetColorFromPairNumber(pairNumber);
+        cout<<pairNumber<<"\t"<<colorPair.ToString()<<endl;
+    }
+}
+
 int main() {
     testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
     testNumberToPair(5, TelCoColorCoder::WHITE, TelCoColorCoder::SLATE);
